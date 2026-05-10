@@ -1,0 +1,22 @@
+{
+  "name": "DMK Frontals",
+  "short_name": "DMK",
+  "description": "Official DMK Frontals Membership and Political Information App",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#cc0000",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "sunrise.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "sunrise.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>DMK Frontals</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    height:350px;
+    background:url('frontals-bg.jpg')
+    no-repeat center center/cover;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.7);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero-content h1{
+    font-size:70px;
+    color:red;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:24px;
+}
+
+/* CONTAINER */
+
+.container{
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+    padding:60px 0;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1b1b1b;
+    border-radius:20px;
+    overflow:hidden;
+    border:2px solid red;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:25px;
+    text-align:center;
+}
+
+.card-content h2{
+    color:red;
+    margin-bottom:15px;
+    font-size:32px;
+}
+
+.card-content p{
+    line-height:1.8;
+    color:#ddd;
+    font-size:18px;
+}
+
+/* QUOTE */
+
+.quote{
+    margin-top:70px;
+    background:#1c1c1c;
+    padding:40px;
+    border-left:6px solid red;
+    border-radius:15px;
+    text-align:center;
+}
+
+.quote h2{
+    color:red;
+    margin-bottom:20px;
+    font-size:40px;
+}
+
+.quote p{
+    font-size:24px;
+    line-height:1.8;
+}
+
+/* BUTTON */
+
+.back-btn{
+    display:block;
+    width:240px;
+    margin:60px auto;
+    text-align:center;
+    padding:18px;
+    background:red;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+.footer{
+    background:black;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.footer img{
+    width:80px;
+    margin-bottom:15px;
+}
+
+.footer p{
+    color:#ccc;
+    margin-top:15px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+    height:260px;
+}
+
+.hero-content h1{
+    font-size:42px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
+.card-content h2{
+    font-size:26px;
+}
+
+.card-content p{
+    font-size:16px;
+}
+
+.quote h2{
+    font-size:28px;
+}
+
+.quote p{
+    font-size:18px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<div class="hero">
+
+    <div class="hero-content">
+
+        <h1>DMK FRONTALS</h1>
+
+        <p>
+            சமூகநீதி • சமத்துவம் • முன்னேற்றம்
+        </p>
+
+    </div>
+
+</div>
+
+<!-- MAIN -->
+
+<div class="container">
+
+    <div class="cards">
+
+        <!-- CARD 1 -->
+
+        <div class="card">
+
+            <img src="youth.jpg">
+
+            <div class="card-content">
+
+                <h2>Youth Wing</h2>
+
+                <p>
+                    இளைஞர்களின் முன்னேற்றம்,
+                    கல்வி மற்றும் வேலைவாய்ப்பு
+                    வளர்ச்சிக்காக செயல்படும்
+                    முக்கிய அமைப்பு.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="card">
+
+            <img src="women.jpg">
+
+            <div class="card-content">
+
+                <h2>Women Wing</h2>
+
+                <p>
+                    பெண்கள் பாதுகாப்பு,
+                    சமத்துவம் மற்றும்
+                    சமூக முன்னேற்றத்திற்காக
+                    செயல்படும் அமைப்பு.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div class="card">
+
+            <img src="students.jpg">
+
+            <div class="card-content">
+
+                <h2>Students Wing</h2>
+
+                <p>
+                    மாணவர்களின் கல்வி,
+                    திறன் மேம்பாடு மற்றும்
+                    சமூக விழிப்புணர்விற்காக
+                    செயல்படும் பிரிவு.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 4 -->
+
+        <div class="card">
+
+            <img src="labour.jpg">
+
+            <div class="card-content">
+
+                <h2>Labour Wing</h2>
+
+                <p>
+                    தொழிலாளர்களின் உரிமைகள்,
+                    நலன் மற்றும் முன்னேற்றத்திற்காக
+                    செயல்படும் தொழிலாளர் அமைப்பு.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- QUOTE -->
+
+    <div class="quote">
+
+        <h2>
+            தமிழ்நாடு போராடும் தமிழ்நாடு வெல்லும்
+        </h2>
+
+        <p>
+            “ஒன்றுபட்டால் உயர்வு,
+            உழைத்தால் வெற்றி”
+            <br><br>
+            “இளைஞர்கள் எழுச்சி தான்
+            தமிழ்நாட்டின் வளர்ச்சி”
+        </p>
+
+    </div>
+
+    <!-- BUTTON -->
+
+    <a href="index.html"
+    class="back-btn">
+
+        ← BACK HOME
+
+    </a>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+    <img src="sunrise.png">
+
+    <h2>DMK FRONTALS</h2>
+
+    <p>
+        © 2025 All Rights Reserved
+    </p>
+
+</div>
+
+</body>
+</html>

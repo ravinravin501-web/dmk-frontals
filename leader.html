@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>DMK Leaders</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    background:url('leader-bg.jpg')
+    no-repeat center center/cover;
+    height:420px;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.7);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero-content h1{
+    font-size:70px;
+    color:red;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:24px;
+}
+
+/* CONTAINER */
+
+.container{
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+    padding:60px 0;
+}
+
+/* PROFILE */
+
+.profile{
+    display:grid;
+    grid-template-columns:320px 1fr;
+    gap:40px;
+    align-items:center;
+    margin-bottom:70px;
+}
+
+.profile img{
+    width:100%;
+    border-radius:20px;
+    border:4px solid red;
+    box-shadow:0 0 25px rgba(255,0,0,0.5);
+}
+
+.profile-content h2{
+    font-size:48px;
+    color:red;
+    margin-bottom:20px;
+}
+
+.profile-content p{
+    font-size:21px;
+    line-height:1.9;
+    color:#ddd;
+}
+
+/* QUOTE */
+
+.quote-box{
+    background:#1c1c1c;
+    border-left:6px solid red;
+    padding:40px;
+    border-radius:15px;
+    text-align:center;
+    margin-top:40px;
+}
+
+.quote-box h2{
+    color:red;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.quote-box p{
+    font-size:24px;
+    line-height:1.8;
+}
+
+/* BUTTON */
+
+.back-btn{
+    display:block;
+    width:260px;
+    margin:60px auto;
+    text-align:center;
+    padding:18px;
+    background:red;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+.footer{
+    background:black;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.footer img{
+    width:80px;
+    margin-bottom:15px;
+}
+
+.footer p{
+    color:#ccc;
+    margin-top:15px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+    height:320px;
+}
+
+.hero-content h1{
+    font-size:42px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
+.profile{
+    grid-template-columns:1fr;
+}
+
+.profile-content h2{
+    font-size:34px;
+    text-align:center;
+}
+
+.profile-content p{
+    font-size:18px;
+    text-align:center;
+}
+
+.quote-box h2{
+    font-size:28px;
+}
+
+.quote-box p{
+    font-size:18px;
+}
+
+.back-btn{
+    width:220px;
+    font-size:20px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<div class="hero">
+
+    <div class="hero-content">
+
+        <h1>DMK LEADERS</h1>
+
+        <p>
+            மக்கள் சேவையே மகேசன் சேவை
+        </p>
+
+    </div>
+
+</div>
+
+<!-- MAIN CONTAINER -->
+
+<div class="container">
+
+    <!-- LEADER 1 -->
+
+    <div class="profile">
+
+        <img src="astin.jpg">
+
+        <div class="profile-content">
+
+            <h2>S. Astin</h2>
+
+            <p>
+                நாகர்கோவில் சட்ட மன்ற தொகுதி
+                வேட்பாளராக மக்கள் சேவையில்
+                தொடர்ந்து செயல்பட்டு வரும்
+                தலைவர் S. Astin அவர்கள்.
+
+                <br><br>
+
+                சமூகநீதி, மக்கள் நலம்,
+                இளைஞர் முன்னேற்றம் மற்றும்
+                தொகுதி வளர்ச்சிக்காக
+                அர்ப்பணிப்புடன் செயல்பட்டு
+                வருகிறார்.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- LEADER 2 -->
+
+    <div class="profile">
+
+        <img src="magesh.jpg">
+
+        <div class="profile-content">
+
+            <h2>R. Magesh</h2>
+
+            <p>
+                கன்னியாகுமரி சட்ட மன்ற தொகுதி
+                வேட்பாளராக மக்கள் நலப்பணிகளில்
+                தொடர்ந்து ஈடுபட்டு வரும்
+                தலைவர் R. Magesh அவர்கள்.
+
+                <br><br>
+
+                கல்வி, இளைஞர் வளர்ச்சி,
+                சமூகநீதி மற்றும் பொதுமக்கள்
+                முன்னேற்றத்திற்காக
+                பல்வேறு திட்டங்களை
+                முன்னெடுத்து வருகிறார்.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- QUOTE -->
+
+    <div class="quote-box">
+
+        <h2>
+            தமிழ்நாடு போராடும் தமிழ்நாடு வெல்லும்
+        </h2>
+
+        <p>
+            “ஒன்றுபட்டால் உயர்வு,
+            உழைத்தால் வெற்றி”
+            <br><br>
+            “இளைஞர்கள் எழுச்சி தான்
+            தமிழ்நாட்டின் வளர்ச்சி”
+        </p>
+
+    </div>
+
+    <!-- BUTTON -->
+
+    <a href="index.html"
+    class="back-btn">
+
+        ← BACK HOME
+
+    </a>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+    <img src="sunrise.png">
+
+    <h2>DMK FRONTALS</h2>
+
+    <p>
+        © 2025 All Rights Reserved
+    </p>
+
+</div>
+
+</body>
+</html>

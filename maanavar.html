@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>மாணவர் அணி</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    overflow-x:hidden;
+}
+
+/* HEADER */
+
+.header{
+    background:#111;
+    padding:15px 25px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    border-bottom:3px solid red;
+}
+
+.logo-section{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo{
+    width:65px;
+}
+
+/* HERO */
+
+.hero{
+    height:250px;
+    background:url('banner.jpg') no-repeat center center/cover;
+    position:relative;
+}
+
+.hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.7);
+}
+
+/* CONTENT */
+
+.content-section{
+    width:92%;
+    max-width:1100px;
+    margin:50px auto;
+    background:white;
+    border-radius:25px;
+    padding:35px;
+    box-shadow:0 0 20px rgba(0,0,0,0.12);
+}
+
+.video-box{
+    width:100%;
+    overflow:hidden;
+    border-radius:20px;
+    margin-bottom:35px;
+}
+
+.video-box video{
+    width:100%;
+    border-radius:20px;
+}
+
+.content-section h2{
+    color:red;
+    font-size:42px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.content-section p{
+    font-size:24px;
+    line-height:2;
+    color:#333;
+    text-align:justify;
+}
+
+.quote-box{
+    margin-top:30px;
+    background:#111;
+    color:white;
+    padding:25px;
+    border-left:6px solid red;
+    border-radius:15px;
+    font-size:24px;
+    line-height:1.8;
+    text-align:center;
+}
+
+.back-btn{
+    display:inline-block;
+    margin-top:35px;
+    background:red;
+    color:white;
+    text-decoration:none;
+    padding:16px 32px;
+    border-radius:12px;
+    font-size:22px;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:#cc0000;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#000;
+    color:white;
+    padding:50px 20px;
+    text-align:center;
+}
+
+.footer-logo{
+    width:80px;
+    margin-bottom:20px;
+}
+
+.social-icons{
+    margin-top:20px;
+}
+
+.social-icons i{
+    font-size:24px;
+    margin:0 12px;
+    color:red;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+    height:180px;
+}
+
+.content-section{
+    padding:20px;
+}
+
+.content-section h2{
+    font-size:30px;
+}
+
+.content-section p{
+    font-size:18px;
+}
+
+.quote-box{
+    font-size:18px;
+}
+
+.back-btn{
+    font-size:18px;
+    padding:14px 25px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<div class="header">
+
+    <div class="logo-section">
+
+        <img src="sunrise.png" class="logo">
+
+    </div>
+
+</div>
+
+<!-- HERO -->
+
+<div class="hero"></div>
+
+<!-- CONTENT -->
+
+<div class="content-section">
+
+    <div class="video-box">
+
+        <!-- YOUR VIDEO -->
+
+        <video controls>
+            <source src="student-video.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+    <h2>
+        திமுக மாணவர் அணி
+    </h2>
+
+    <p>
+        திமுக மாணவர் அணி என்பது மாணவர்களின் உரிமை, கல்வி முன்னேற்றம் மற்றும்
+        சமூக விழிப்புணர்வை வளர்க்கும் ஒரு வலிமையான இயக்கமாகும்.
+        <br><br>
+
+        கல்வி சமத்துவம், திறன் மேம்பாடு மற்றும் மாணவர்களின் எதிர்கால முன்னேற்றத்திற்காக
+        பல்வேறு நடவடிக்கைகளை திமுக மாணவர் அணி மேற்கொண்டு வருகிறது.
+        <br><br>
+
+        தமிழ் மொழி, சமூகநீதி மற்றும் மாணவர் நலன்களை பாதுகாக்கும் பணியில்
+        இளம் தலைமுறையினரை ஒன்றிணைத்து செயல்படுகிறது.
+        <br><br>
+
+        “இன்றைய மாணவர்கள் நாளைய தலைவர்கள்” என்ற எண்ணத்துடன்,
+        அறிவும் ஆற்றலும் கொண்ட புதிய தலைமுறையை உருவாக்கும் பணியில்
+        திமுக மாணவர் அணி தொடர்ந்து செயலாற்றி வருகிறது.
+    </p>
+
+    <div class="quote-box">
+
+        “கல்வி வளர்ச்சி தான்  
+        சமூகத்தின் உண்மையான எழுச்சி!”
+
+    </div>
+
+    <a href="index.html" class="back-btn">
+        முகப்புக்கு செல்ல
+    </a>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+    <img src="sunrise.png" class="footer-logo">
+
+    <h2>திமுக முன்னணி</h2>
+
+    <p style="margin-top:15px;">
+        © 2025 அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை
+    </p>
+
+    <div class="social-icons">
+
+        <i class="fab fa-facebook"></i>
+
+        <i class="fab fa-instagram"></i>
+
+        <i class="fab fa-twitter"></i>
+
+        <i class="fab fa-youtube"></i>
+
+    </div>
+
+</div>
+
+</body>
+</html>

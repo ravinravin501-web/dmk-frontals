@@ -11,75 +11,13 @@
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
-    .apk-section{
-    background:#000;
-    padding:40px 20px;
-    display:flex;
-    justify-content:center;
-}
 
-.apk-card{
-    width:100%;
-    max-width:370px;
-    background:#111;
-    border-left:10px solid red;
-    border-radius:30px;
-    padding:40px 25px;
-    text-align:center;
-    box-shadow:0 0 25px rgba(255,0,0,0.3);
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
-
-.apk-card h2{
-    color:red;
-    font-size:42px;
-    line-height:1.2;
-    margin-bottom:35px;
-    font-weight:bold;
-}
-
-.apk-card p{
-    color:white;
-    font-size:22px;
-    line-height:1.8;
-    margin:25px 0;
-}
-
-.line{
-    width:120px;
-    height:3px;
-    background:red;
-    margin:20px auto;
-    border-radius:10px;
-}
-
-.download-line{
-    color:#ddd;
-    font-size:20px;
-    line-height:1.6;
-    margin-top:20px;
-    margin-bottom:25px;
-}
-
-.apk-btn{
-    background:red;
-    color:white;
-    border:none;
-    padding:20px 35px;
-    border-radius:50px;
-    font-size:24px;
-    font-weight:bold;
-    cursor:pointer;
-    margin-top:10px;
-    box-shadow:0 0 20px rgba(255,0,0,0.5);
-    transition:0.3s;
-}
-
-.apk-btn:hover{
-    background:#cc0000;
-    transform:scale(1.05);
-}
-    .apk-section{
-    
 
 body{
     background:#f5f5f5;
@@ -89,11 +27,12 @@ body{
 /* HEADER */
 
 .header{
-    background:#111;
+    background:#000;
     padding:15px 40px;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    border-bottom:4px solid red;
     position:sticky;
     top:0;
     z-index:1000;
@@ -123,7 +62,8 @@ body{
 .navbar a{
     color:white;
     text-decoration:none;
-    font-size:16px;
+    font-size:17px;
+    font-weight:bold;
     transition:0.3s;
 }
 
@@ -134,7 +74,7 @@ body{
 /* HERO */
 
 .hero{
-    height:500px;
+    height:550px;
     background:url('banner.jpg') no-repeat center center/cover;
     position:relative;
     display:flex;
@@ -147,7 +87,7 @@ body{
     content:'';
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,0.65);
+    background:rgba(0,0,0,0.7);
 }
 
 .hero-content{
@@ -159,37 +99,40 @@ body{
 .hero-content h1{
     font-size:65px;
     color:red;
-    margin-bottom:15px;
+    margin-bottom:20px;
+    font-weight:bold;
 }
 
 .hero-content p{
     font-size:24px;
-    margin-bottom:25px;
+    margin-bottom:30px;
 }
 
 .hero-btn{
-    padding:15px 35px;
-    border:none;
-    border-radius:10px;
     background:red;
     color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:8px;
     font-size:20px;
+    font-weight:bold;
     cursor:pointer;
     transition:0.3s;
 }
 
 .hero-btn:hover{
-    background:#cc0000;
+    background:#b30000;
+    transform:scale(1.05);
 }
 
 /* TITLE */
 
 .section-title{
     text-align:center;
-    margin:60px 0 30px;
-    font-size:45px;
-    color:#111;
+    margin:70px 0 40px;
+    font-size:50px;
     font-weight:bold;
+    color:#111;
 }
 
 .section-title span{
@@ -202,17 +145,18 @@ body{
     width:92%;
     margin:auto;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
-    margin-bottom:70px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+    margin-bottom:80px;
 }
 
 .card{
     background:white;
     border-radius:20px;
     overflow:hidden;
-    box-shadow:0 0 15px rgba(0,0,0,0.15);
-    transition:0.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.4s;
+    border-top:6px solid red;
 }
 
 .card:hover{
@@ -221,53 +165,107 @@ body{
 
 .card img{
     width:100%;
-    height:260px;
+    height:280px;
     object-fit:cover;
 }
 
 .card-content{
-    padding:20px;
+    padding:25px;
     text-align:center;
 }
 
 .card-content h2{
     color:red;
-    margin-bottom:10px;
+    margin-bottom:15px;
+    font-size:30px;
 }
 
 .card-content p{
     color:#444;
-    line-height:1.6;
+    font-size:18px;
+    line-height:1.8;
 }
 
 .card-btn{
-    margin-top:15px;
-    padding:12px 25px;
-    border:none;
-    border-radius:8px;
+    margin-top:20px;
     background:#111;
     color:white;
+    border:none;
+    padding:13px 30px;
+    border-radius:8px;
+    font-size:17px;
+    font-weight:bold;
     cursor:pointer;
+    transition:0.3s;
 }
 
-/* QUOTES */
+.card-btn:hover{
+    background:red;
+}
 
-.quote-section{
-    background:#111;
-    color:white;
-    text-align:center;
+/* APK SECTION */
+
+.apk-section{
+    background:#000;
     padding:80px 20px;
 }
 
-.quote-section h2{
-    color:red;
-    font-size:45px;
-    margin-bottom:25px;
+.apk-card{
+    width:100%;
+    max-width:500px;
+    margin:auto;
+    background:white;
+    border-radius:25px;
+    padding:45px 30px;
+    text-align:center;
+    border-top:8px solid red;
+    box-shadow:0 0 35px rgba(255,0,0,0.3);
 }
 
-.quote-section p{
-    font-size:24px;
-    line-height:1.8;
+.apk-card h2{
+    color:red;
+    font-size:46px;
+    line-height:1.4;
+    margin-bottom:25px;
+    font-weight:bold;
+}
+
+.apk-card p{
+    color:#333;
+    font-size:21px;
+    line-height:1.9;
+    margin:20px 0;
+}
+
+.line{
+    width:120px;
+    height:4px;
+    background:red;
+    margin:22px auto;
+    border-radius:20px;
+}
+
+.download-line{
+    font-size:20px;
+    color:#111;
+}
+
+.apk-btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:18px 38px;
+    border-radius:50px;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+    margin-top:10px;
+}
+
+.apk-btn:hover{
+    background:#b30000;
+    transform:scale(1.05);
 }
 
 /* FOOTER */
@@ -275,22 +273,23 @@ body{
 .footer{
     background:#000;
     color:white;
-    padding:50px 20px;
+    padding:60px 20px;
     text-align:center;
+    border-top:5px solid red;
 }
 
 .footer-logo{
-    width:80px;
+    width:90px;
     margin-bottom:20px;
 }
 
 .social-icons{
-    margin-top:20px;
+    margin-top:25px;
 }
 
 .social-icons i{
-    font-size:24px;
-    margin:0 12px;
+    font-size:28px;
+    margin:0 14px;
     color:red;
 }
 
@@ -323,20 +322,21 @@ body{
 }
 
 .section-title{
+    font-size:34px;
+}
+
+.card-content h2{
+    font-size:24px;
+}
+
+.apk-card h2{
     font-size:32px;
-}
-
-.quote-section h2{
-    font-size:30px;
-}
-
-.quote-section p{
-    font-size:18px;
 }
 
 }
 
 </style>
+
 </head>
 
 <body>
@@ -357,25 +357,15 @@ body{
 
     <div class="navbar">
 
-        <a href="index.html">
-            முகப்பு
-        </a>
+        <a href="index.html">முகப்பு</a>
 
-        <a href="frontals.html">
-            முன்னணிகள்
-        </a>
+        <a href="frontals.html">முன்னணிகள்</a>
 
-        <a href="leader.html">
-            தலைவர்கள்
-        </a>
+        <a href="leader.html">தலைவர்கள்</a>
 
-        <a href="gallery.html">
-            புகைப்படங்கள்
-        </a>
+        <a href="gallery.html">புகைப்படங்கள்</a>
 
-        <a href="contact.html">
-            தொடர்புக்கு
-        </a>
+        <a href="contact.html">தொடர்பு</a>
 
     </div>
 
@@ -396,7 +386,7 @@ body{
         </p>
 
         <button class="hero-btn"
-        onclick="window.location.href='https://ravinravin501-web.github.io/Udanpirappey-va-/'">
+onclick="window.location.href='https://ravinravin501-web.github.io/Udanpirappey-va-/'">
 
             இப்போது இணையுங்கள்
 
@@ -434,7 +424,9 @@ body{
 
             <button class="card-btn"
 onclick="window.location.href='youth.html'">
-    மேலும் காண
+
+                மேலும் காண
+
             </button>
 
         </div>
@@ -457,7 +449,9 @@ onclick="window.location.href='youth.html'">
 
             <button class="card-btn"
 onclick="window.location.href='magalir.html'">
-    மேலும் காண
+
+                மேலும் காண
+
             </button>
 
         </div>
@@ -480,7 +474,9 @@ onclick="window.location.href='magalir.html'">
 
             <button class="card-btn"
 onclick="window.location.href='maanavar.html'">
-    மேலும் காண
+
+                மேலும் காண
+
             </button>
 
         </div>
@@ -503,7 +499,9 @@ onclick="window.location.href='maanavar.html'">
 
             <button class="card-btn"
 onclick="window.location.href='thozhilalar.html'">
-    மேலும் காண
+
+                மேலும் காண
+
             </button>
 
         </div>
@@ -512,40 +510,50 @@ onclick="window.location.href='thozhilalar.html'">
 
 </div>
 
+<!-- APK SECTION -->
 
-    <!-- APK DOWNLOAD CARD -->
 <section class="apk-section">
 
     <div class="apk-card">
 
         <h2>
+
             தமிழ்நாடு <br>
             போராடும் <br>
             தமிழ்நாடு <br>
             வெல்லும்
+
         </h2>
 
         <p>
+
             “தமிழகத்தின் வளர்ச்சிக்காக <br>
             எங்களுடன் இணைந்திடுங்கள்”
+
         </p>
 
         <div class="line"></div>
 
         <p>
+
             “உங்கள் குரல், உங்கள் உரிமை, <br>
             உங்கள் தமிழ்நாடு”
+
         </p>
 
         <div class="line"></div>
 
         <p class="download-line">
+
             கட்சியின் செயலிகள் மற்றும் தகவல்களை பெற இப்போது பதிவிறக்கவும்
+
         </p>
 
         <button class="apk-btn"
-        onclick="window.location.href='DMK-IT-WING-KANYAKUMARI.apk'">
+onclick="window.location.href='DMK-IT-WING-KANYAKUMARI.apk'">
+
             📦 இப்போது பதிவிறக்கவும்
+
         </button>
 
     </div>
@@ -561,7 +569,9 @@ onclick="window.location.href='thozhilalar.html'">
     <h2>திமுக முன்னணி</h2>
 
     <p style="margin-top:15px;">
+
         © 2025 அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை
+
     </p>
 
     <div class="social-icons">
@@ -579,4 +589,4 @@ onclick="window.location.href='thozhilalar.html'">
 </div>
 
 </body>
-</html>
+    </html>

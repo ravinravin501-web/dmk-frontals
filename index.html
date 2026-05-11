@@ -23,57 +23,55 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 body{
     background:#f5f5f5;
     overflow-x:hidden;
-    padding-top:95px; /* IMPORTANT for fixed navbar */
 }
 
-/* ===== FIXED NAVBAR ===== */
+/* ===== HEADER (NON STICKY + SMALL) ===== */
 .header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
     background:#000;
-    padding:15px 40px;
+    padding:10px 25px;
     display:flex;
     justify-content:space-between;
     align-items:center;
     border-bottom:4px solid red;
-    z-index:9999;
 }
 
 /* LOGO */
 .logo-section{
     display:flex;
     align-items:center;
-    gap:12px;
+    gap:8px;
 }
 
 .logo{
-    width:60px;
+    width:45px;
 }
 
 .logo-text{
     color:white;
-    font-size:28px;
+    font-size:20px;
     font-weight:bold;
 }
 
-/* MENU */
+/* NAVBAR BOX STYLE */
 .navbar{
     display:flex;
-    gap:25px;
+    gap:10px;
 }
 
 .navbar a{
     color:white;
     text-decoration:none;
-    font-size:17px;
+    font-size:14px;
     font-weight:bold;
+    padding:6px 12px;
+    border:1px solid red;
+    border-radius:6px;
+    background:#111;
     transition:0.3s;
 }
 
 .navbar a:hover{
-    color:red;
+    background:red;
 }
 
 /* HERO */
@@ -129,7 +127,7 @@ body{
     transform:scale(1.05);
 }
 
-/* SECTION TITLE */
+/* TITLE */
 .section-title{
     text-align:center;
     margin:70px 0 40px;
@@ -205,7 +203,7 @@ body{
     background:red;
 }
 
-/* APK SECTION */
+/* APK */
 .apk-section{
     background:#000;
     padding:80px 20px;
@@ -261,7 +259,6 @@ body{
     font-weight:bold;
     cursor:pointer;
     transition:0.3s;
-    margin-top:10px;
 }
 
 .apk-btn:hover{
@@ -283,10 +280,6 @@ body{
     margin-bottom:20px;
 }
 
-.social-icons{
-    margin-top:25px;
-}
-
 .social-icons i{
     font-size:28px;
     margin:0 14px;
@@ -298,18 +291,12 @@ body{
 
 .header{
     flex-direction:column;
-    gap:15px;
-    padding:15px;
+    gap:10px;
 }
 
 .navbar{
     flex-wrap:wrap;
     justify-content:center;
-    gap:15px;
-}
-
-.hero{
-    height:420px;
 }
 
 .hero-content h1{
@@ -340,14 +327,12 @@ body{
 
 <body>
 
-<!-- FIXED HEADER -->
+<!-- HEADER -->
 <div class="header">
 
     <div class="logo-section">
         <img src="sunrise.png" class="logo">
-        <div class="logo-text">
-            திமுக கன்னியாகுமரி🖤♥️
-        </div>
+        <div class="logo-text">திமுக கன்னியாகுமரி🖤♥️</div>
     </div>
 
     <div class="navbar">
@@ -419,7 +404,6 @@ body{
 
 <!-- APK -->
 <section class="apk-section">
-
     <div class="apk-card">
         <h2>தமிழ்நாடு <br> போராடும் <br> தமிழ்நாடு <br> வெல்லும்</h2>
 
@@ -438,12 +422,10 @@ body{
             📦 இப்போது பதிவிறக்கவும்
         </button>
     </div>
-
 </section>
 
 <!-- FOOTER -->
 <div class="footer">
-
     <img src="sunrise.png" class="footer-logo">
     <h2>திமுக முன்னணி</h2>
 
@@ -455,7 +437,6 @@ body{
         <i class="fab fa-twitter"></i>
         <i class="fab fa-youtube"></i>
     </div>
-
 </div>
 
 </body>

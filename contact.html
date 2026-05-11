@@ -50,7 +50,7 @@ iframe{
 
 .btn{
     display:inline-block;
-    margin:20px;
+    margin:12px;
     padding:12px 22px;
     background:red;
     color:white;
@@ -59,7 +59,19 @@ iframe{
     font-weight:bold;
 }
 
-/* FOOTER */
+/* route button */
+.route{
+    display:inline-block;
+    margin:10px;
+    padding:10px 18px;
+    background:#111;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* footer */
 footer{
     margin-top:30px;
     padding:15px;
@@ -73,7 +85,7 @@ footer{
 <body>
 
 <div class="header">
-📍 Nagercoil கட்சி அலுவலகம் - கன்னியாகுமரி மாவட்டம்
+📍 DMK Party Office - Ozhuginasery, Nagercoil
 </div>
 
 <div class="box">
@@ -83,24 +95,41 @@ footer{
     </p>
 </div>
 
-<!-- MAP -->
+<!-- MAP (Correct Location) -->
 <div class="map">
-    <iframe src="https://www.google.com/maps?q=Nagercoil&output=embed"></iframe>
+    <iframe 
+        src="https://www.google.com/maps?q=DMK%20Party%20Office%20Ozhuginasery%20Nagercoil&output=embed">
+    </iframe>
 </div>
+
+<!-- ROUTE LINK -->
+<a class="route"
+   href="https://maps.app.goo.gl/crLmasmqeumtQCdx6"
+   target="_blank">
+📍 வழித்தடத்தை பார்க்க (Route)
+</a>
 
 <div class="box">
     <h3>📌 அலுவலக முகவரி</h3>
     <p class="address">
         DMK Party Office,<br>
-        Nagercoil,<br>
-        கன்னியாகுமரி மாவட்டம்,<br>
-        தமிழ்நாடு
+        Ozhuginasery,<br>
+        :contentReference[oaicite:0]{index=0},<br>
+        Near NH944 Route,<br>
+        Kanyakumari District,<br>
+        Tamil Nadu, India
+    </p>
+</div>
+
+<div class="box">
+    <h3>📞 தொடர்பு</h3>
+    <p>
+        மக்கள் சேவைக்காக எப்போதும் திறந்திருக்கும் அலுவலகம்
     </p>
 </div>
 
 <a href="index.html" class="btn">⬅ பின்னுக்கு செல்ல</a>
 
-<!-- FOOTER -->
 <footer>
     © 2026 DMK IT WING KANYAKUMARI | மக்கள் சேவை இயக்கம்
 </footer>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>சட்டசபை சம்பவம்</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#000,#300000,#9b0000);
+    color:white;
+    padding:20px;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.header h1{
+    color:#ffcc00;
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.header p{
+    font-size:18px;
+}
+
+.video-container{
+    width:100%;
+    max-width:900px;
+    margin:auto;
+}
+
+.video-card{
+    background:#111;
+    border:2px solid #ffcc00;
+    border-radius:20px;
+    padding:20px;
+    margin-bottom:35px;
+    box-shadow:0 0 20px rgba(255,0,0,0.4);
+}
+
+.video-card h2{
+    color:#ffcc00;
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.video-card p{
+    line-height:1.8;
+    margin-bottom:20px;
+    color:#ddd;
+}
+
+video{
+    width:100%;
+    border-radius:15px;
+    border:3px solid red;
+}
+
+.back-btn{
+    width:100%;
+    max-width:250px;
+    display:block;
+    margin:40px auto 0;
+    text-align:center;
+    background:red;
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    border-radius:12px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.back-btn:hover{
+    background:#b30000;
+}
+
+@media(max-width:768px){
+
+.header h1{
+    font-size:30px;
+}
+
+.video-card h2{
+    font-size:22px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>🏛 சட்டசபை சம்பவம்</h1>
+
+    <p>
+        தமிழக சட்டசபையில் நடைபெற்ற முக்கிய நிகழ்வுகள் மற்றும் உரைகள்
+    </p>
+</div>
+
+<div class="video-container">
+
+    <!-- VIDEO 1 -->
+    <div class="video-card">
+
+        <h2>முதல்வரின் உரை</h2>
+
+        <p>
+            தமிழ்நாட்டின் வளர்ச்சி, சமூகநீதி மற்றும் மக்களின் உரிமைகள் குறித்து
+            சட்டசபையில் நடைபெற்ற முக்கிய உரை.
+        </p>
+
+        <video controls>
+            <source src="video1.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+    <!-- VIDEO 2 -->
+    <div class="video-card">
+
+        <h2>இளைஞர் நல திட்டங்கள்</h2>
+
+        <p>
+            இளைஞர்களுக்கான புதிய திட்டங்கள் மற்றும் வேலைவாய்ப்பு குறித்த
+            முக்கிய அறிவிப்புகள்.
+        </p>
+
+        <video controls>
+            <source src="video2.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+    <!-- VIDEO 3 -->
+    <div class="video-card">
+
+        <h2>மகளிர் பாதுகாப்பு திட்டம்</h2>
+
+        <p>
+            பெண்களின் பாதுகாப்பு மற்றும் முன்னேற்றத்திற்கான அரசின் நடவடிக்கைகள்.
+        </p>
+
+        <video controls>
+            <source src="video3.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+</div>
+
+<a href="index.html" class="back-btn">
+    ⬅ முகப்பிற்கு செல்லவும்
+</a>
+
+</body>
+</html>
